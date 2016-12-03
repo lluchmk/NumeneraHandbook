@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Numenéra Handbook</string>
+    <string name="numenera">Numenéra</string>
+    <string name="cyphers">Cyphers</string>
+    <string name="artifacts">Artifacts</string>
+    <string name="oddities">Oddities</string>
+
+    <string name="cypherType">Cypher type</string>
+    <string name="level">Level: </string>
+    <string name="wearable">Wearable: </string>
+    <string name="usable">Usable: </string>
+    <string name="internal">Internal: </string>
+    <string name="effect">Effect: </string>
+</resources>

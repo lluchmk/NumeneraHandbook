@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dam.lluchmk.numenerahandbook.ItemActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageType"
+        android:contentDescription="@string/cypherType"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:id="@+id/cypherName"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageType"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:text="@string/level"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLevel"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageType"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/cypherLevel"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvLevel"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cypherName"
+        android:layout_width="0dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:text="@string/wearable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWearable"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLevel"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/cypherWearable"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvWearable"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cypherLevel"
+        android:layout_width="0dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:text="@string/usable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUsable"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cypherWearable"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/cypherUsable"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvUsable"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cypherWearable"
+        android:layout_width="0dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:text="@string/internal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvInternal"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cypherUsable"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/cypherInternal"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/tvInternal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cypherUsable"
+        android:layout_width="0dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:text="@string/effect"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tfEffect"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cypherInternal"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/cypherEffect"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/tfEffect"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/cypherInternal" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
